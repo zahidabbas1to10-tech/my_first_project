@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes page responsive -->
+  <title>University Admission Form</title>
+
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+  <!-- Page heading -->
+  <h1>University Admission Form</h1>
+
+  <!-- Admission Form -->
+  <form>
+
+    <!-- 1. Department Section -->
+    <fieldset>
+      <table></table>
+      <legend><h2>Department Information</h2></legend>
+
+      <label for="department">Department:</label>
+      <select id="department" name="deptName" required>
+        <option value="">Select Department</option>
+        <option value="CS">Computer Science</option>
+        <option value="SE">Software Engineering</option>
+        <option value="IT">Information Technology</option>
+        <option value="EE">Electrical Engineering</option>
+        <option value="BBA">Business Administration</option>
+      </select>
+      </table>N
+
+      <label for="program">Program:</label>
+      <select id="program" name="program" required>
+        <option value="">Select Program</option>
+        <option value="BS">BS</option>
+        <option value="MS">MS</option>
+        <option value="PhD">PhD</option>
+      </select>
+    </fieldset>
+
+    <!-- 2. Personal Information -->
+    <fieldset>
+      <legend><h2>Personal Information</h2></legend>
+
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="fatherName">Father's Name:</label>
+      <input type="text" id="fatherName" name="fatherName" required>
+
+      <label for="cnic">CNIC:</label>
+      <input type="number" id="cnic" name="cnic" minlength="13" maxlength="13" required>
+      <small>(13 digits without dashes)</small>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" name="nationality" required>
+    </fieldset>
+
+    <!-- 3. Contact Information -->
+    <fieldset>
+      <legend><h2>Contact Information</h2></legend>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+      <small>(11 digits e.g. 03001234567)</small>
+
+      <label for="address">Permanent Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+    </fieldset>
+
+    <!-- 4. Academic Qualifications -->
+    <fieldset>
+      <legend><h2>Academic Qualifications</h2></legend>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Result / GPA</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="degree1" placeholder="Matric"></td>
+          <td><input type="text" name="institution1"></td>
+          <td><input type="number" name="year1" min="1900" max="2099"></td>
+          <td><input type="text" name="result1"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="degree2" placeholder="Intermediate"></td>
+          <td><input type="text" name="institution2"></td>
+          <td><input type="number" name="year2" min="1900" max="2099"></td>
+          <td><input type="text" name="result2"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="degree3" placeholder="Bachelor (if any)"></td>
+          <td><input type="text" name="institution3"></td>
+          <td><input type="number" name="year3" min="1900" max="2099"></td>
+          <td><input type="text" name="result3"></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <!-- 5. Document Upload -->
+    <fieldset>
+      <legend><h2>Required Documents</h2></legend>
+
+      <label for="photo">Upload Passport Size Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+
+      <label for="cnicCopy">Upload CNIC Copy:</label>
+      <input type="file" id="cnicCopy" name="cnicCopy" accept="image/*,application/pdf" required>
+
+      <label for="marksheets">Upload Academic Certificates:</label>
+      <input type="file" id="marksheets" name="marksheets" accept="image/*,application/pdf" multiple required>
+    </fieldset>
+
+    <!-- 6. Declaration -->
+    <fieldset>
+      <legend><h2>Declaration</h2></legend>
+      <label>
+        <input type="checkbox" name="declaration" required>
+        I hereby declare that all the information provided is true and correct to the best of my knowledge.
+      </label>
+    </fieldset>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Application</button>
+
+  </form>
+
+</body>
+</html>

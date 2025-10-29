@@ -1,0 +1,126 @@
+/* ==============================
+   University Registration Form CSS
+   ============================== */
+
+/* ---- Page Body ---- */
+body {
+  font-family: "Segoe UI", Arial, sans-serif; /* clean, professional font */
+  background-color: #f5f7fa; /* light gray background for neat look */
+  margin: 0; /* remove default browser margin */
+  padding: 20px; /* space around page content */
+  color: #333; /* dark gray text for readability */
+}
+
+/* ---- Main Heading ---- */
+h1 {
+  text-align: center; /* center the title */
+  color: #0d47a1; /* deep blue color for university theme */
+  font-size: 2.2rem; /* make heading bigger */
+  margin-bottom: 20px; /* space below heading */
+}
+
+/* ---- Section Headings ---- */
+h2 {
+  color: #1565c0; /* slightly lighter blue */
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* ---- Fieldset Box (groups form parts) ---- */
+fieldset {
+  border: 1px solid #ccc; /* light border */
+  border-radius: 8px; /* rounded corners */
+  padding: 20px; /* inner spacing */
+  margin-bottom: 20px; /* space between sections */
+  margin-right: 20px;
+  background-color: #ffffff; /* white box for contrast */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* soft shadow for depth */
+}
+
+/* ---- Legend (title of fieldset) ---- */
+legend {
+  font-weight: bold;
+  color: #0d47a1;
+  padding: 0 10px; /* spacing around text */
+}
+
+/* ---- Labels ---- */
+label {
+  display: block; /* each label in new line */
+  margin-bottom: 8px; /* small space below label */
+  font-weight: 500;
+}
+
+/* ---- Input fields and dropdowns ---- */
+input, select {
+  width: 100%; /* take full width of container */
+  padding: 10px; /* inner spacing */
+  margin-top: 4px; /* small gap above */
+  margin-bottom: 15px; /* space below */
+  border: 1px solid #bbb; /* soft border */
+  border-radius: 6px; /* rounded edges */
+  font-size: 1rem;
+  box-sizing: border-box; /* padding doesn’t break width */
+  transition: border-color 0.3s ease;
+}
+
+/* ---- Focus effect on input fields ---- */
+input:focus, select:focus {
+  border-color: #1565c0; /* highlight in blue */
+  outline: none; /* remove default browser outline */
+  box-shadow: 0 0 5px rgba(21, 101, 192, 0.3); /* glow effect */
+}
+
+/* ---- Table for Qualifications ---- */
+table {
+  width: 100%; /* table spans full width */
+  border-collapse: collapse; /* clean border style */
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc; /* table border */
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #e3f2fd; /* light blue for header row */
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+/* ---- Submit Button ---- */
+button {
+  display: block;
+  width: 100%; /* full width button */
+  padding: 12px;
+  background-color: #0d47a1; /* deep blue */
+  color: #fff; /* white text */
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* hand cursor */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on button */
+button:hover {
+  background-color: #1565c0; /* lighter blue */
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  input, select, button {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
